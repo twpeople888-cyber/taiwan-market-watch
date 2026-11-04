@@ -1,47 +1,209 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>台股底部觀察模型｜2026-11-03</title><style>
-body{font-family:system-ui,"Noto Sans TC",sans-serif;margin:0;background:#f4f7fb;color:#172033;line-height:1.65}.page{max-width:1120px;margin:auto;padding:32px}.hero,.card{background:#fff;border:1px solid #dbe3ef;border-radius:18px;padding:24px;margin:0 0 18px;box-shadow:0 6px 24px #1720330b}.hero{background:#102a43;color:#fff}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.kpi{background:#f7f9fc;border-radius:14px;padding:16px}.hero .kpi{background:#ffffff14}.kpi b{font-size:1.5rem;display:block}.neg{color:#b42318}.hero .neg{color:#ffb4ab}.pos{color:#126b48}.tag{display:inline-block;padding:4px 10px;border-radius:999px;background:#fff3cd;color:#7a4d00;font-weight:700}h1,h2,h3{line-height:1.25}h2{margin-top:0}table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{padding:10px;border-bottom:1px solid #e5eaf1;text-align:right}th:first-child,td:first-child{text-align:left}.chart{min-height:175px;border:1px dashed #b7c3d4;border-radius:12px;padding:18px;background:#fbfcfe}.bars{display:flex;gap:22px;align-items:end;height:120px;border-bottom:1px solid #9eacc0}.bar{width:72px;background:#466bff;border-radius:8px 8px 0 0;position:relative}.bar.red{background:#d66a5d}.bar.gold{background:#d5a529}.bar span{position:absolute;bottom:100%;width:120px;left:-24px;text-align:center;font-size:.8rem}.small{font-size:.86rem;color:#58677c}.warn{border-left:5px solid #e0a800;background:#fffaf0;padding:14px 18px}.sources a{color:#164eaa}ul{padding-left:20px}@media(max-width:650px){.page{padding:14px}table{font-size:.78rem}.scroll{overflow:auto}}
-</style></head><body><main class="page">
-<section class="hero"><h1>台股底部觀察模型</h1><p>每日市場監測｜2026-11-03（台灣時間）</p><div class="grid"><div class="kpi">加權指數<b class="neg">43,307.54</b><span>−1,612.60（−3.59%）</span></div><div class="kpi">SOX（11/02）<b class="neg">10,328.33</b><span>−360.47（−3.37%）</span></div><div class="kpi">台積電<b class="neg">2,295 元</b><span>−35（−1.50%）</span></div><div class="kpi">模型階段<b>第一階段</b><span>市場下跌／系統性賣壓</span></div></div></section>
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>台股底部觀察模型｜2026-11-04</title>
+<style>
+:root{--ink:#172033;--muted:#5b687a;--line:#dbe3ef;--blue:#2356a8;--blue2:#77a6e5;--gold:#b77a12;--red:#a63c32;--bg:#f4f7fb;--card:#fff}
+*{box-sizing:border-box}body{font-family:system-ui,"Noto Sans TC",sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.65}.page{max-width:1180px;margin:auto;padding:30px}.hero,.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;margin:0 0 18px;box-shadow:0 6px 24px #1720330b}.hero{background:#102a43;color:#fff}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.kpi{background:#f7f9fc;border-radius:14px;padding:16px}.hero .kpi{background:#ffffff14}.kpi b{font-size:1.42rem;display:block}.neg{color:var(--red)}.hero .neg{color:#ffb4ab}.pos{color:#176b50}.hero .pos{color:#8ee0bf}.tag{display:inline-block;padding:4px 10px;border-radius:999px;background:#fff1c9;color:#755000;font-weight:750;margin:4px 0}.tag.red{background:#fde8e5;color:#8d2f27}.tag.blue{background:#e7effa;color:#234d83}h1,h2,h3{line-height:1.25}h2{margin-top:0}h3{margin:0 0 8px}table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{padding:9px;border-bottom:1px solid #e5eaf1;text-align:right;vertical-align:top}th:first-child,td:first-child{text-align:left}.scroll{overflow:auto}.chart{border:1px solid #c7d2e2;border-radius:14px;padding:16px;background:#fbfcfe;min-height:250px}.chart svg{display:block;width:100%;height:auto}.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.82rem;color:var(--muted)}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}.small{font-size:.84rem;color:var(--muted)}.warn{border-left:5px solid #d99a1c;background:#fff9e9;padding:14px 18px}.note{border-left:5px solid #4f77b5;background:#eef5ff;padding:14px 18px}.sources a{color:#164eaa}.stage-title{font-size:1.08rem;font-weight:800}.stage-card .tag{display:block;width:max-content}.axis{stroke:#96a3b6;stroke-width:1}.gridline{stroke:#e4e9f1;stroke-width:1}.line-a{fill:none;stroke:#2356a8;stroke-width:3}.line-b{fill:none;stroke:#b77a12;stroke-width:3}.line-c{fill:none;stroke:#6e7e91;stroke-width:2.5;stroke-dasharray:6 4}.point-a{fill:#2356a8}.point-b{fill:#b77a12}.bar-neg{fill:#a63c32}.bar-pos{fill:#2356a8}.na{display:flex;min-height:170px;align-items:center;justify-content:center;text-align:center;color:var(--muted);background:repeating-linear-gradient(135deg,#f8fafc,#f8fafc 10px,#f1f4f8 10px,#f1f4f8 20px);border-radius:10px;padding:20px}ul,ol{padding-left:21px}.updated{font-size:.84rem;color:#d8e4f0}@media(max-width:650px){.page{padding:12px}.hero,.card{padding:17px;border-radius:14px}table{font-size:.76rem}.chart{padding:10px;min-height:220px}.stage-title{font-size:1rem}}
+</style>
+</head>
+<body><main class="page">
+<section class="hero">
+<h1>台股底部觀察模型</h1>
+<p>每日市場監測｜2026-11-04（台灣時間）</p>
+<div class="grid">
+<div class="kpi">加權指數<b class="neg">42,948.91</b><span>−358.63（−0.83%）</span></div>
+<div class="kpi">SOX（11/03）<b class="pos">10,657.94</b><span>+329.61（+3.19%）</span></div>
+<div class="kpi">台積電<b class="neg">2,260 元</b><span>−35（−1.52%）</span></div>
+<div class="kpi">模型主階段<b>第一階段</b><span>市場下跌；第二階段持續</span></div>
+</div>
+<p class="updated">資料截點：台股 2026-11-04 收盤；SOX 2026-11-03 收盤；融資最新完整資料 2026-11-03。</p>
+</section>
 
-<section class="card"><h2>結論先行</h2><p><span class="tag">尚未具備初步止跌條件</span></p><p>今日台股出現廣泛且劇烈的賣壓：加權指數下跌 3.59%，上市股票下跌 1,000 家、上漲僅 58 家；櫃買指數更重挫 6.42%。外資上市櫃合計賣超約 <b>1,126.99 億元</b>，與 SOX 11/02 下跌 3.37% 同向。台積電跌幅 1.50%，雖相對大盤抗跌 2.09 個百分點，但單日相對抗跌尚不足以判定領先止跌。</p><p>上市融資 11/03 單日減少 229.25 億元，顯示去槓桿明顯加速；惟上櫃融資餘額尚未能可靠核實，因此今日上市櫃合計融資、單日背離與五日累計背離均暫不計算。市場目前仍以「第一階段：市場下跌」為主，並開始出現「第二階段：籌碼清理」特徵。</p></section>
+<section class="card">
+<h2>結論先行</h2>
+<p><span class="tag red">尚未具備初步止跌條件</span></p>
+<p>台股收盤續跌 0.83% 並再創本波收盤低點，外資上市櫃合計賣超約 <b>1,521.40 億元</b>，較前一交易日的 1,126.99 億元擴大。另一方面，普通股市場廣度由 11/03 的上漲 117 家、下跌 1,782 家，改善為今日上漲 835 家、下跌 960 家；SOX 亦於 11/03 反彈 3.19%。這些屬於賣壓降溫的早期線索，但指數、台積電與合計 ADL 仍同步走低，尚不能判定賣壓衰竭。</p>
+<p>最新完整融資資料仍停在 11/03：上市櫃合計餘額 7,963.37 億元，單日大減 307.72 億元（−3.720%），顯示籌碼清理加速；但 11/04 融資尚未公布，因此今日指數與融資的單日背離不計算。</p>
+</section>
 
-<section class="card"><h2>一、核心指標</h2><div class="scroll"><table><thead><tr><th>指標</th><th>最新值</th><th>單日變化</th><th>近期高點／回檔</th><th>判讀</th></tr></thead><tbody>
-<tr><td>SOX</td><td>10,328.33（11/02）</td><td class="neg">−360.47／−3.37%</td><td>13,217.82（10/06）／−21.86%</td><td>仍在明顯修正，未確認止跌</td></tr>
-<tr><td>加權指數</td><td>43,307.54</td><td class="neg">−1,612.60／−3.59%</td><td>49,822.55（10/06）／−13.08%</td><td>收盤再創近期低點</td></tr>
-<tr><td>台積電 2330</td><td>2,295 元</td><td class="neg">−35／−1.50%</td><td>20／60 日完整序列待累積</td><td>相對大盤抗跌，但仍下跌</td></tr>
-<tr><td>上市成交金額</td><td>約 8,529.64 億元（股票口徑）</td><td>高量下跌</td><td>全市場總計約 1.002 兆元</td><td>量增價跌，賣壓未衰竭</td></tr>
-<tr><td>市場廣度（上市股票）</td><td>漲 58／跌 1,000／平 22</td><td>下跌占 92.6%</td><td>—</td><td>極弱廣度</td></tr>
-<tr><td>櫃買指數</td><td>345.52</td><td class="neg">−23.72／−6.42%</td><td>—</td><td>中小型股賣壓更重</td></tr>
-</tbody></table></div></section>
+<section class="card">
+<h2>一、核心指標</h2>
+<div class="scroll"><table><thead><tr><th>指標</th><th>最新值</th><th>單日變化</th><th>近期高點／回檔</th><th>20／60 日判讀</th></tr></thead><tbody>
+<tr><td>SOX</td><td>10,657.94（11/03）</td><td class="pos">+329.61／+3.19%</td><td>13,217.82（10/06）／−19.37%</td><td>近月仍屬大幅修正；單日反彈尚未確認止跌。60 日完整序列待持續累積。</td></tr>
+<tr><td>加權指數</td><td>42,948.91</td><td class="neg">−358.63／−0.83%</td><td>49,822.55（10/06）／−13.79%</td><td>5 日 −8.7%、20 日 −11.4%、60 日 −3.7%，仍在弱勢區。</td></tr>
+<tr><td>台積電 2330</td><td>2,260 元</td><td class="neg">−35／−1.52%</td><td>2,585（10/06）／−12.57%</td><td>10/05→11/04 約 −12.23%；同窗大盤約 −13.61%，中期相對抗跌，但今日落後大盤 0.69 個百分點。</td></tr>
+<tr><td>上市成交金額</td><td>一般股票約 1.014 兆元</td><td>高檔成交</td><td>上市全市場約 1.177 兆元</td><td>上櫃成交金額約 2,399.80 億元；量能未轉為明確價漲量增。</td></tr>
+<tr><td>普通股市場廣度</td><td>上市櫃漲 835／跌 960／平 167</td><td>較 11/03 明顯改善</td><td>上漲占比約 42.6%</td><td>仍為負廣度，但恐慌式擴散顯著收斂。</td></tr>
+<tr><td>櫃買指數</td><td>343.50</td><td class="neg">−2.02／−0.58%</td><td>距近期高點約 −24.3%</td><td>今日跌幅小於加權指數，但中期仍弱。</td></tr>
+</tbody></table></div>
+</section>
 
-<section class="card"><h2>二、融資與背離</h2><div class="scroll"><table><thead><tr><th>市場／日期</th><th>前日餘額（億元）</th><th>當日餘額（億元）</th><th>增減（億元）</th><th>變化率</th></tr></thead><tbody>
+<section class="card">
+<h2>二、融資餘額與背離</h2>
+<div class="scroll"><table><thead><tr><th>市場／基準日</th><th>前日餘額（億元）</th><th>當日餘額（億元）</th><th>增減（億元）</th><th>變化率</th></tr></thead><tbody>
 <tr><td>上市 11/03</td><td>6,226.99</td><td>5,997.74</td><td class="neg">−229.25</td><td class="neg">−3.681%</td></tr>
-<tr><td>上櫃 11/03</td><td colspan="4">待核實／待更新</td></tr>
-<tr><td>上市櫃合計 11/02</td><td>8,287.69</td><td>8,271.11</td><td class="neg">−16.58</td><td class="neg">−0.200%</td></tr>
-</tbody></table></div><p><b>今日上市市場暫定背離：</b>融資變化率 −3.681% − 指數漲跌幅（−3.59%）＝<b>−0.091 個百分點</b>。這只代表上市市場，不能代替上市櫃合計模型。方向屬「指數下跌、融資大幅減少」，可解讀為籌碼清理加速，但不得直接視為落底。</p><div class="warn"><b>資料品質：</b>今日上櫃融資尚未可靠核實，因此合計融資、合計單日背離、五日累計背離留白，不以估值補齊。</div></section>
+<tr><td>上櫃 11/03</td><td>2,044.10</td><td>1,965.63</td><td class="neg">−78.47</td><td class="neg">−3.839%</td></tr>
+<tr><td>上市櫃合計 11/03</td><td>8,271.10</td><td>7,963.37</td><td class="neg">−307.72</td><td class="neg">−3.720%</td></tr>
+<tr><td>上市櫃合計 11/04</td><td colspan="4">待更新：晚間執行時官方完整融資資料尚未公布</td></tr>
+</tbody></table></div>
+<p><b>11/03 單日背離：</b>融資合計變化率 −3.720% − 加權指數漲跌幅 −3.59% ＝ <b>−0.130 個百分點</b>。屬「指數下跌、融資大幅減少」，顯示去槓桿加速，但不能直接判定落底。</p>
+<p><b>五日累計背離（10/27→11/03，同日期完整窗口）：</b>加權指數 −6.05%；融資合計 −4.36%；五日累計背離＝<b>+1.69 個百分點</b>。相較指數跌幅，融資下降幅度仍較小，代表五日尺度的槓桿清理尚未完全追上價格修正。</p>
+<p><b>20 日觀察窗口（10/02→11/03）：</b>加權指數約 −10.66%；融資合計約 −7.04%；背離約 +3.62 個百分點。短期單日去槓桿突然加速，但中期仍未形成「融資充分下降、指數跌幅收斂」的完整組合。</p>
+<div class="warn"><b>資料品質：</b>11/04 融資尚未公布，因此不把 11/04 指數跌幅與 11/03 融資變化混為同日背離。</div>
+</section>
 
-<section class="card"><h2>三、外資與台積電</h2><div class="scroll"><table><thead><tr><th>項目</th><th>11/03（億元）</th><th>近 5 日（億元）</th><th>近 20 日（億元）</th></tr></thead><tbody>
-<tr><td>外資上市</td><td class="neg">−1,073.07</td><td class="neg">−3,461.53</td><td class="neg">−11,970.82</td></tr>
-<tr><td>外資上櫃</td><td class="neg">−53.92</td><td class="neg">−79.75</td><td class="neg">−352.15</td></tr>
-<tr><td>上市櫃合計</td><td class="neg">−1,126.99</td><td class="neg">−3,541.28</td><td class="neg">−12,322.97</td></tr>
-</tbody></table></div><p>外資賣壓不僅未縮小，今日較 11/02 的上市賣超 735.21 億元明顯擴大。台積電今日跌幅小於大盤，但仍未翻正，故判定為「相對抗跌」，尚非「領先止跌」。</p></section>
+<section class="card">
+<h2>三、外資、台積電與市場廣度</h2>
+<div class="scroll"><table><thead><tr><th>項目</th><th>11/04（億元）</th><th>近 5 日（億元）</th><th>近 20 日</th></tr></thead><tbody>
+<tr><td>外資上市</td><td class="neg">−1,499.00</td><td class="neg">−5,120.10</td><td class="neg">−13,509.8（官方資料彙整平台）</td></tr>
+<tr><td>外資上櫃</td><td class="neg">−22.41</td><td class="neg">−195.50</td><td>待更新</td></tr>
+<tr><td>上市櫃合計</td><td class="neg">−1,521.40</td><td class="neg">−5,315.60</td><td>待更新：上櫃完整 20 日合計未核實</td></tr>
+</tbody></table></div>
+<p>外資連續偏賣且今日賣超擴大，與台積電下跌 1.52% 同向。SOX 前一晚反彈，並未立即轉化為台積電與台股止跌，顯示外部半導體訊號與台股資金流暫時背離。</p>
 
-<section class="card"><h2>四、ETF 追蹤</h2><p>股票型 ETF AUM 依 11/02 可核實排行列示；近一月含息總報酬與債券型前十大最新 AUM 排名尚無法在同一可靠基準日完整核實，因此不計算兩類平均或 AUM 加權平均，以免混用口徑。</p><div class="scroll"><table><thead><tr><th>代號</th><th>名稱</th><th>AUM（億元）</th><th>近一月報酬</th><th>基準日</th></tr></thead><tbody>
-<tr><td>0050</td><td>元大台灣50</td><td>24,461.37</td><td>待核實</td><td>11/02</td></tr><tr><td>0056</td><td>元大高股息</td><td>8,301.79</td><td>待核實</td><td>11/02</td></tr><tr><td>00878</td><td>國泰永續高股息</td><td>6,648.10</td><td>待核實</td><td>11/02</td></tr><tr><td>00919</td><td>群益台灣精選高息</td><td>6,295.95</td><td>待核實</td><td>11/02</td></tr><tr><td>006208</td><td>富邦台50</td><td>4,524.71</td><td>待核實</td><td>11/02</td></tr><tr><td>00631L</td><td>元大台灣50正2</td><td>2,864.90</td><td>待核實</td><td>11/02</td></tr><tr><td>00981A</td><td>主動統一台股增長</td><td>2,698.09</td><td>待核實</td><td>11/02</td></tr><tr><td>009816</td><td>凱基台灣TOP50</td><td>2,157.07</td><td>待核實</td><td>11/02</td></tr><tr><td>00918</td><td>大華優利高填息30</td><td>1,614.51</td><td>待核實</td><td>11/02</td></tr><tr><td>0052</td><td>富邦科技</td><td>1,613.91</td><td>待核實</td><td>11/02</td></tr>
-</tbody></table></div><p><b>債券型前十大：</b>待核實／待更新。AUM 變化不等同申購贖回；在未取得受益權單位數與淨值拆解前，不判定資金由股票型轉向債券型。</p></section>
+<h3>騰落線 ADL（普通股口徑）</h3>
+<div class="scroll"><table><thead><tr><th>日期／市場</th><th>上漲</th><th>下跌</th><th>平盤</th><th>每日騰落差額</th><th>ADL</th></tr></thead><tbody>
+<tr><td>11/03 上市</td><td>58</td><td>1,000</td><td>22</td><td>−942</td><td>0（基準日）</td></tr>
+<tr><td>11/03 上櫃</td><td>59</td><td>782</td><td>32</td><td>−723</td><td>0（基準日）</td></tr>
+<tr><td>11/03 合計</td><td>117</td><td>1,782</td><td>54</td><td>−1,665</td><td>0（基準日）</td></tr>
+<tr><td>11/04 上市</td><td>438</td><td>544</td><td>99</td><td>−106</td><td>−106</td></tr>
+<tr><td>11/04 上櫃</td><td>397</td><td>416</td><td>68</td><td>−19</td><td>−19</td></tr>
+<tr><td>11/04 合計</td><td>835</td><td>960</td><td>167</td><td>−125</td><td>−125</td></tr>
+</tbody></table></div>
+<p><b>ADL 與指數背離：</b>11/03→11/04 加權指數由 43,307.54 降至 42,948.91，合計 ADL 由 0 降至 −125，兩者同步走弱，<b>沒有正向背離</b>。但每日騰落差額由 −1,665 大幅收斂至 −125，表示賣壓廣度明顯改善。20 日累計騰落差額約為上市 −3,681、上櫃 −3,294、合計 −6,975，廣度中期仍弱。</p>
+<p><b>對第三階段的支持程度：不支持。</b>今日廣度改善是早期正面線索，但指數與 ADL 仍同步創本基準期低點，且外資賣壓擴大。</p>
+</section>
 
-<section class="card"><h2>五、六組圖表狀態</h2><p class="small">本日為此排程的第一個歷史基準點；20／60 日資料將由後續每日核實資料逐步累積。缺漏不插值。</p><div class="grid">
-<div class="chart"><h3>圖 1｜SOX vs 台股</h3><div class="bars"><div class="bar red" style="height:100px"><span>SOX 10/06＝100</span></div><div class="bar red" style="height:78px"><span>SOX 11/02＝78.14</span></div><div class="bar" style="height:100px"><span>台股 10/06＝100</span></div><div class="bar" style="height:87px"><span>台股 11/03＝86.92</span></div></div></div>
-<div class="chart"><h3>圖 2｜融資餘額</h3><div class="bars"><div class="bar" style="height:110px"><span>上市 11/02<br>6,226.99億</span></div><div class="bar red" style="height:106px"><span>上市 11/03<br>5,997.74億</span></div><div class="bar gold" style="height:36px"><span>上櫃 11/02<br>2,044.12億</span></div></div></div>
-<div class="chart"><h3>圖 3｜每日變化率</h3><div class="bars"><div class="bar red" style="height:108px"><span>台股 −3.59%</span></div><div class="bar gold" style="height:111px"><span>上市融資 −3.681%</span></div></div></div>
-<div class="chart"><h3>圖 4｜五日累計背離</h3><p>待累積完整、同口徑的上市櫃融資與加權指數資料後繪製。</p></div>
-<div class="chart"><h3>圖 5｜外資 vs 台積電</h3><div class="bars"><div class="bar red" style="height:110px"><span>外資合計<br>−1,126.99億</span></div><div class="bar gold" style="height:60px"><span>台積電<br>−1.50%</span></div><div class="bar red" style="height:100px"><span>大盤<br>−3.59%</span></div></div></div>
-<div class="chart"><h3>圖 6｜股票 vs 債券 ETF</h3><p>近一月同口徑含息總報酬待核實；不以價格報酬混用。</p></div>
-</div></section>
+<section class="card">
+<h2>四、ETF 追蹤</h2>
+<p>股票型 ETF AUM 沿用最近可核實的 11/02 基準；今日未取得同一基準日、同一報酬口徑的完整更新。近一月報酬與債券型前十大最新 AUM 排名均不估算。</p>
+<div class="scroll"><table><thead><tr><th>代號</th><th>名稱</th><th>AUM（億元）</th><th>近一月報酬</th><th>基準日／方式</th></tr></thead><tbody>
+<tr><td>0050</td><td>元大台灣50</td><td>24,461.37</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+<tr><td>0056</td><td>元大高股息</td><td>8,301.79</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+<tr><td>00878</td><td>國泰永續高股息</td><td>6,648.10</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+<tr><td>00919</td><td>群益台灣精選高息</td><td>6,295.95</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+<tr><td>006208</td><td>富邦台50</td><td>4,524.71</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+<tr><td>00631L</td><td>元大台灣50正2</td><td>2,864.90</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+<tr><td>00981A</td><td>主動統一台股增長</td><td>2,698.09</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+<tr><td>009816</td><td>凱基台灣TOP50</td><td>2,157.07</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+<tr><td>00918</td><td>大華優利高填息30</td><td>1,614.51</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+<tr><td>0052</td><td>富邦科技</td><td>1,613.91</td><td>待核實</td><td>11/02／待確認含息口徑</td></tr>
+</tbody></table></div>
+<div class="warn"><b>債券型前十大：</b>待核實／待更新。因無法取得同一可靠基準日的完整 AUM 與含息報酬，本日不計算股票型與債券型平均報酬、AUM 加權報酬或資金輪動。AUM 變化也不等同申購贖回。</div>
+</section>
 
-<section class="card"><h2>六、四階段判斷</h2><p><b>目前主階段：第一階段「市場下跌」</b>；同時開始出現第二階段「籌碼清理」特徵，尚未進入第三階段「賣壓衰竭」。</p><div class="grid"><div class="kpi"><b>第一階段｜市場下跌</b><span class="tag">判定：成立</span><p>SOX、台股與中小型股同步重挫；外資大幅賣超。</p></div><div class="kpi"><b>第二階段｜籌碼清理</b><span class="tag">判定：開始出現</span><p>上市融資單日大減 229.25 億元，顯示去槓桿加速。</p></div><div class="kpi"><b>第三階段｜賣壓衰竭</b><span class="tag">判定：未成立</span><p>指數仍創近期低、外資賣超擴大、市場廣度極弱。</p></div><div class="kpi"><b>第四階段｜資金回流與底部確認</b><span class="tag">判定：未成立</span><p>尚無外資轉買、指數站穩或廣度擴張證據。</p></div></div></section>
+<section class="card">
+<h2>五、圖表分析</h2>
+<p class="small">圖表僅使用已核實資料；缺漏處明確留白。因本模型自 11/03 起建立自有歷史基準，完整 20／60 日圖將隨每日資料累積。</p>
+<div class="grid">
+<div class="chart"><h3>圖 1｜SOX 與加權指數（10/06＝100）</h3>
+<svg viewBox="0 0 420 210" role="img" aria-label="SOX與加權指數標準化比較">
+<line class="axis" x1="44" y1="170" x2="400" y2="170"/><line class="axis" x1="44" y1="25" x2="44" y2="170"/>
+<line class="gridline" x1="44" y1="55" x2="400" y2="55"/><line class="gridline" x1="44" y1="105" x2="400" y2="105"/>
+<polyline class="line-a" points="60,45 245,99 330,119 395,123"/><polyline class="line-b" points="60,45 245,154 330,142"/>
+<circle class="point-a" cx="60" cy="45" r="4"/><circle class="point-a" cx="395" cy="123" r="4"/><circle class="point-b" cx="60" cy="45" r="4"/><circle class="point-b" cx="330" cy="142" r="4"/>
+<text x="48" y="195" font-size="11">10/06</text><text x="230" y="195" font-size="11">11/02</text><text x="316" y="195" font-size="11">11/03</text><text x="380" y="195" font-size="11">11/04</text>
+<text x="350" y="115" font-size="11" fill="#2356a8">台股 86.20</text><text x="300" y="137" font-size="11" fill="#8b5c0e">SOX 80.63</text>
+</svg><div class="legend"><span><i class="dot" style="background:#2356a8"></i>加權指數</span><span><i class="dot" style="background:#b77a12"></i>SOX（最新至 11/03）</span></div>
+<p class="small">SOX 單日反彈，但自高點回檔仍深於台股；兩者尚未同步確認止跌。</p></div>
 
-<section class="card"><h2>七、下一交易日五項觀察</h2><ol><li>加權指數是否守住 43,191.58 今日低點，或再創收盤新低。</li><li>外資上市櫃賣超能否由約 1,127 億元明顯縮小。</li><li>上櫃融資公布後，上市櫃融資合計是否出現更大幅度去槓桿。</li><li>台積電能否由相對抗跌轉為收紅，並帶動半導體與市場廣度改善。</li><li>SOX 是否停止創低；美股 11/03 收盤將是台股下一交易日的重要外部訊號。</li></ol><p><b>與前一交易日比較：</b>市場訊號惡化；台股跌幅、廣度與外資賣壓均擴大。<b>與前五日比較：</b>外資累計仍大幅賣超，尚無改善證據；完整五日融資背離待核實。</p><p><b>明確結論：</b>市場賣壓仍在擴大；籌碼清理正在加速；賣壓尚未衰竭；資金尚未回流；目前不具備初步止跌或底部確認條件。</p></section>
+<div class="chart"><h3>圖 2｜上市、上櫃及合計融資餘額</h3>
+<svg viewBox="0 0 420 210" role="img" aria-label="融資餘額趨勢">
+<line class="axis" x1="48" y1="170" x2="400" y2="170"/><line class="axis" x1="48" y1="25" x2="48" y2="170"/>
+<polyline class="line-a" points="70,63 230,69 385,83"/><polyline class="line-b" points="70,137 230,141 385,147"/><polyline class="line-c" points="70,35 230,43 385,60"/>
+<text x="54" y="195" font-size="11">10/02</text><text x="214" y="195" font-size="11">10/27</text><text x="370" y="195" font-size="11">11/03</text>
+<text x="315" y="55" font-size="11">合計 7,963億</text>
+</svg><div class="legend"><span><i class="dot" style="background:#2356a8"></i>上市</span><span><i class="dot" style="background:#b77a12"></i>上櫃</span><span>－－ 合計</span></div>
+<p class="small">兩市場融資同步下降；11/04 待更新。</p></div>
 
-<section class="card sources"><h2>資料來源與基準日</h2><ul><li><a href="https://www.twse.com.tw/exchangeReport/MI_INDEX?date=20261103&response=html&type=ALLBUT0999">臺灣證券交易所：大盤統計、廣度、台積電（2026-11-03）</a></li><li><a href="https://www.twse.com.tw/exchangeReport/MI_MARGN?date=20261103&response=html">臺灣證券交易所：上市信用交易（2026-11-03）</a></li><li><a href="https://www.twse.com.tw/fund/BFI82U?response=html&type=day">臺灣證券交易所：三大法人買賣金額（2026-11-03）</a></li><li><a href="https://indexes.nasdaqomx.com/Index/Overview/SOX">Nasdaq：SOX 官方指數頁（2026-11-02）</a></li><li><a href="https://wwwc.twse.com.tw/zh/ETFortune/index">ETF e添富：AUM（2026-11-02）</a></li><li><a href="https://money-link.com.tw/TWStock/TWStockMarket.aspx?optionType=2">富聯網：上市／上櫃外資 5、20、60 日彙總（資料源列示 TWSE／TPEx，2026-11-03）</a></li><li><a href="https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5624ae60-5a8b-42bc-b750-c3093216ae87">MoneyDJ：櫃買法人金額轉載（2026-11-03）</a></li></ul><p class="small">註：ETF 報酬、債券型 ETF 最新前十大、上櫃融資等未能在本次執行時完整核實者均留白。本文為市場監測研究，不構成投資建議。</p></section>
+<div class="chart"><h3>圖 3｜加權指數與融資每日變化率</h3>
+<svg viewBox="0 0 420 210" role="img" aria-label="11月3日指數與融資變化率">
+<line class="axis" x1="50" y1="45" x2="400" y2="45"/><rect class="bar-neg" x="95" y="45" width="85" height="105"/><rect fill="#b77a12" x="245" y="45" width="85" height="109"/>
+<text x="112" y="168" font-size="12">指數 −3.59%</text><text x="251" y="172" font-size="12">融資 −3.720%</text>
+<text x="110" y="34" font-size="11">11/03</text><text x="270" y="34" font-size="11">11/03</text>
+</svg><p class="small">同日背離 −0.130 個百分點；11/04 融資未公布，不混用日期。</p></div>
+
+<div class="chart"><h3>圖 4｜五日累計背離（至 11/03）</h3>
+<svg viewBox="0 0 420 210" role="img" aria-label="五日累計背離">
+<line class="axis" x1="45" y1="80" x2="400" y2="80"/><rect class="bar-neg" x="70" y="80" width="80" height="90"/><rect fill="#b77a12" x="180" y="80" width="80" height="65"/><rect class="bar-pos" x="290" y="55" width="80" height="25"/>
+<text x="72" y="190" font-size="11">指數 −6.05%</text><text x="180" y="165" font-size="11">融資 −4.36%</text><text x="294" y="45" font-size="11">背離 +1.69</text>
+</svg><p class="small">五日尺度融資降幅小於指數跌幅，籌碼清理仍未完全追上價格修正。</p></div>
+
+<div class="chart"><h3>圖 5｜外資買賣超與台積電</h3>
+<svg viewBox="0 0 420 230" role="img" aria-label="外資五日買賣超與台積電收盤">
+<line class="axis" x1="45" y1="60" x2="400" y2="60"/>
+<rect class="bar-neg" x="62" y="60" width="42" height="43"/><rect class="bar-neg" x="130" y="60" width="42" height="72"/><rect class="bar-neg" x="198" y="60" width="42" height="45"/><rect class="bar-neg" x="266" y="60" width="42" height="67"/><rect class="bar-neg" x="334" y="60" width="42" height="91"/>
+<polyline class="line-a" points="83,35 151,45 219,55 287,65 355,75"/><circle class="point-a" cx="83" cy="35" r="4"/><circle class="point-a" cx="355" cy="75" r="4"/>
+<text x="65" y="214" font-size="10">10/29</text><text x="133" y="214" font-size="10">10/30</text><text x="204" y="214" font-size="10">11/02</text><text x="272" y="214" font-size="10">11/03</text><text x="340" y="214" font-size="10">11/04</text>
+<text x="320" y="87" font-size="10" fill="#2356a8">台積電 2,260</text>
+</svg><div class="legend"><span><i class="dot" style="background:#a63c32"></i>外資合計賣超</span><span><i class="dot" style="background:#2356a8"></i>台積電收盤</span></div>
+<p class="small">外資五日合計賣超約 5,315.6 億元，台積電連續走弱。</p></div>
+
+<div class="chart"><h3>圖 6｜股票型與債券型 ETF 報酬</h3><div class="na"><div><b>待更新</b><br>尚未取得同一基準日、同一含息總報酬口徑的兩類前十大資料，因此不繪製比較值。</div></div></div>
+
+<div class="chart"><h3>圖 7｜上市、上櫃、合計 ADL 與加權指數</h3>
+<svg viewBox="0 0 420 220" role="img" aria-label="ADL與加權指數兩日比較">
+<line class="axis" x1="55" y1="70" x2="400" y2="70"/><line class="axis" x1="55" y1="25" x2="55" y2="180"/>
+<polyline class="line-a" points="110,70 340,135"/><polyline class="line-b" points="110,70 340,82"/><polyline class="line-c" points="110,70 340,148"/>
+<text x="92" y="205" font-size="11">11/03</text><text x="322" y="205" font-size="11">11/04</text>
+<text x="345" y="136" font-size="10" fill="#2356a8">上市 −106</text><text x="345" y="84" font-size="10" fill="#8b5c0e">上櫃 −19</text><text x="345" y="157" font-size="10">合計 −125</text>
+</svg><div class="legend"><span><i class="dot" style="background:#2356a8"></i>上市 ADL</span><span><i class="dot" style="background:#b77a12"></i>上櫃 ADL</span><span>－－ 合計 ADL</span></div>
+<p class="small">自有 ADL 基準日為 11/03＝0。加權指數同期間下跌 0.83%，ADL 同步下行，尚無正向背離。</p></div>
+</div>
+</section>
+
+<section class="card">
+<h2>六、四階段判斷</h2>
+<p><b>目前主階段：第一階段「市場下跌」</b>；第二階段「籌碼清理」持續，第三階段「賣壓衰竭」僅出現廣度收斂的早期線索但尚未成立，第四階段尚未成立。</p>
+<div class="grid">
+<div class="kpi stage-card"><div class="stage-title">第一階段｜市場下跌</div><span class="tag red">判定：成立</span><p>加權指數續創收盤低點、外資賣超擴大、台積電再跌；系統性壓力仍在。</p></div>
+<div class="kpi stage-card"><div class="stage-title">第二階段｜籌碼清理</div><span class="tag">判定：成立並持續</span><p>11/03 上市櫃融資合計單日減少 307.72 億元，去槓桿明顯加速。</p></div>
+<div class="kpi stage-card"><div class="stage-title">第三階段｜賣壓衰竭</div><span class="tag blue">判定：未成立</span><p>廣度負值大幅收斂、SOX 反彈是早期線索；但指數與 ADL 同步走低。騰落訊號：<b>不支持</b>。</p></div>
+<div class="kpi stage-card"><div class="stage-title">第四階段｜資金回流與底部確認</div><span class="tag red">判定：未成立</span><p>外資仍大幅賣超，台積電未轉強，指數未站穩，尚無資金回流證據。</p></div>
+</div>
+</section>
+
+<section class="card">
+<h2>七、每日結論與下一交易日觀察</h2>
+<ol>
+<li><b>今日整體狀態：</b>跌幅收斂但仍創收盤低，屬弱勢中的廣度改善。</li>
+<li><b>SOX 與台股：</b>SOX 先反彈，台股尚未跟上；相對強弱暫時有利 SOX。</li>
+<li><b>融資清理：</b>截至 11/03 顯著加速；11/04 待公布，不能提前判讀。</li>
+<li><b>外資流向：</b>賣超擴大，五日合計仍高度偏空。</li>
+<li><b>台積電止跌：</b>中期相對大盤略抗跌，但今日弱於大盤，未出現領先止跌。</li>
+<li><b>股票型與債券型 ETF：</b>同口徑資料不足，不判定相對強弱或資金轉向。</li>
+<li><b>融資與指數背離：</b>11/03 單日去槓桿加速；五日融資降幅仍小於指數跌幅。</li>
+<li><b>目前階段：</b>第一階段成立；第二階段持續；第三、第四階段未成立。</li>
+<li><b>與前一日比較：</b>市場廣度與 SOX 訊號改善；外資、指數與台積電訊號未改善。</li>
+<li><b>與前五日比較：</b>指數仍下跌 8.7%，外資持續大賣，整體尚未改善。</li>
+</ol>
+<h3>下一交易日最重要的五項觀察</h3>
+<ol>
+<li>加權指數能否守住 11/04 低點 41,855.82，並停止創收盤新低。</li>
+<li>外資上市櫃合計賣超是否由 1,521.40 億元顯著縮小。</li>
+<li>11/04 融資公布後，合計融資是否繼續下降，以及下降速度是否開始趨緩。</li>
+<li>合計 ADL 是否先於指數形成較高低點，尤其上櫃 ADL 能否轉正。</li>
+<li>台積電能否轉強，並與 SOX 反彈及上漲家數擴張同步。</li>
+</ol>
+<p><b>明確結論：</b>市場賣壓沒有再以 11/03 的極端廣度擴大，但價格與外資賣壓仍在；籌碼清理持續；賣壓尚未確認衰竭；資金尚未回流；目前不具備初步止跌或底部確認條件。</p>
+</section>
+
+<section class="card sources">
+<h2>資料來源與基準日</h2>
+<ul>
+<li><a href="https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20261104&type=ALLBUT0999&response=html">臺灣證券交易所：加權指數、大盤統計、上市漲跌家數與台積電（2026-11-04）</a></li>
+<li><a href="https://www.twse.com.tw/rwd/zh/marginTrading/MI_MARGN?date=20261103&selectType=MS&response=html">臺灣證券交易所：上市信用交易（2026-11-03，最新完整）</a></li>
+<li><a href="https://www.tpex.org.tw/www/zh-tw/margin/balance?date=2026%2F11%2F03&id=&response=html">證券櫃檯買賣中心：上櫃融資融券（2026-11-03，最新完整）</a></li>
+<li><a href="https://www.twse.com.tw/rwd/zh/fund/BFI82U?dayDate=20261104&type=day&response=html">臺灣證券交易所：三大法人買賣金額（2026-11-04）</a></li>
+<li><a href="https://www.tpex.org.tw/www/zh-tw/insti/summary?type=Daily&date=2026%2F11%2F04&id=&response=html">證券櫃檯買賣中心：三大法人買賣金額（2026-11-04）</a></li>
+<li><a href="https://indexes.nasdaqomx.com/Index/Overview/SOX">Nasdaq：SOX 官方指數頁（2026-11-03）</a></li>
+<li><a href="https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20261101&stockNo=2330&response=html">臺灣證券交易所：台積電月行情（2026-11）</a></li>
+<li><a href="https://breadthdaily.com/tw/">台股廣度日報：上市／上櫃普通股口徑與 5、20、60 日統計（2026-11-04；資料源標示 TWSE／TPEx）</a></li>
+<li><a href="https://wwwc.twse.com.tw/zh/ETFortune/index">證交所 ETF e添富：ETF AUM 最近可核實基準（2026-11-02）</a></li>
+</ul>
+<p class="small">重要口徑：SOX 官方頁與部分行情平台在 11/03 收盤值出現差異，本報採 Nasdaq 官方頁數值；未核實資料一律標示待更新，不插值、不估算。本報告為市場監測研究，不構成投資建議。</p>
+</section>
 </main></body></html>

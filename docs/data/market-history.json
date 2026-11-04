@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "updated_at_taipei": "2026-11-04T20:00:00+08:00",
+  "records": [
+    {
+      "date": "2026-11-03",
+      "taiex_close": 43307.54,
+      "taiex_change_pct": -3.59,
+      "twse_advances": 58,
+      "twse_declines": 1000,
+      "twse_flats": 22,
+      "tpex_advances": 59,
+      "tpex_declines": 782,
+      "tpex_flats": 32,
+      "adl_twse": 0,
+      "adl_tpex": 0,
+      "adl_total": 0,
+      "adl_baseline": true,
+      "margin_twse_100m": 5997.74466,
+      "margin_tpex_100m": 1965.62898,
+      "margin_total_100m": 7963.37364,
+      "foreign_twse_100m": -1073.06720357,
+      "foreign_tpex_100m": -53.91999498,
+      "foreign_total_100m": -1126.98719855,
+      "tsmc_close": 2295,
+      "sox_date": "2026-11-02",
+      "sox_close": 10328.33
+    },
+    {
+      "date": "2026-11-04",
+      "taiex_close": 42948.91,
+      "taiex_change_pct": -0.83,
+      "twse_advances": 438,
+      "twse_declines": 544,
+      "twse_flats": 99,
+      "tpex_advances": 397,
+      "tpex_declines": 416,
+      "tpex_flats": 68,
+      "adl_twse": -106,
+      "adl_tpex": -19,
+      "adl_total": -125,
+      "margin_twse_100m": null,
+      "margin_tpex_100m": null,
+      "margin_total_100m": null,
+      "margin_status": "待更新；最新完整資料為2026-11-03",
+      "foreign_twse_100m": -1498.99834076,
+      "foreign_tpex_100m": -22.40584579,
+      "foreign_total_100m": -1521.40418655,
+      "tsmc_close": 2260,
+      "sox_date": "2026-11-03",
+      "sox_close": 10657.94
+    }
+  ]
+}
+

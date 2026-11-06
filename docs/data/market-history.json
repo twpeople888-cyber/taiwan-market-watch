@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at_taipei": "2026-11-05T14:37:19.707Z",
+  "updated_at_taipei": "2026-11-06T12:01:58.714Z",
   "records": [
     {
       "date": "2026-11-03",
@@ -117,6 +117,30 @@
         "https://www.twse.com.tw/rwd/zh/ETFortune/index",
         "https://www.cna.com.tw/news/afe/202611050332.aspx"
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "taiex_close": 39701.64,
+      "taiex_change_pct": -4.505334010668028,
+      "tsmc_close": 2135,
+      "margin_twse_100m": null,
+      "margin_tpex_100m": null,
+      "margin_total_100m": null,
+      "margin_status": "待公布；最新完整2026-11-05",
+      "foreign_twse_100m": -911.88249259,
+      "foreign_tpex_100m": 70.52832052,
+      "foreign_total_100m": -841.35417207,
+      "twse_advances": 105,
+      "twse_declines": 952,
+      "twse_flats": 27,
+      "tpex_advances": 104,
+      "tpex_declines": 733,
+      "tpex_flats": 38,
+      "adl_twse": -1643,
+      "adl_tpex": -1243,
+      "adl_total": -2886,
+      "sox_date": "2026-11-05",
+      "sox_close": 9011.14
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at_taipei": "2026-11-06T12:01:58.714Z",
+  "updated_at_taipei": "2026-11-07T12:47:04.835Z",
   "records": [
     {
       "date": "2026-11-03",
@@ -123,10 +123,10 @@
       "taiex_close": 39701.64,
       "taiex_change_pct": -4.505334010668028,
       "tsmc_close": 2135,
-      "margin_twse_100m": null,
-      "margin_tpex_100m": null,
-      "margin_total_100m": null,
-      "margin_status": "待公布；最新完整2026-11-05",
+      "margin_twse_100m": 5340.52632,
+      "margin_tpex_100m": 1699.741,
+      "margin_total_100m": 7040.26732,
+      "margin_status": "官方已核實；2026-11-07補齊11/06公布資料",
       "foreign_twse_100m": -911.88249259,
       "foreign_tpex_100m": 70.52832052,
       "foreign_total_100m": -841.35417207,
@@ -140,7 +140,9 @@
       "adl_tpex": -1243,
       "adl_total": -2886,
       "sox_date": "2026-11-05",
-      "sox_close": 9011.14
+      "sox_close": 9011.14,
+      "margin_previous_100m": 7604.45559,
+      "margin_change_pct": -7.419180286119598
     }
   ]
 }
